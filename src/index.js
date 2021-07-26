@@ -1,6 +1,6 @@
 import './style.css';
 
-let scores = [
+const scores = [
   {
     name: 'Name 1',
     score: 300,
@@ -31,7 +31,7 @@ const scoresSection = document.getElementById('scores-section');
 
 if (scores.length > 1) {
   const list = document.createElement('ul');
-  list.className = 'scores-list'
+  list.className = 'scores-list';
   scoresSection.appendChild(list);
 
   for (let i = 0; i < scores.length; i += 1) {
