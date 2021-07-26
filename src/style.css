@@ -45,3 +45,18 @@ main {
   box-shadow: none;
   transform: translate(1px, 1px);
 }
+
+.scores-list {
+  list-style: none;
+  border: 2px solid #333;
+  margin-top: 15px;
+}
+
+.list-item {
+  font-size: 1.5rem;
+  padding: 3px 9px;
+}
+
+.list-item:nth-child(even) {
+  background: #ddd;
+}
