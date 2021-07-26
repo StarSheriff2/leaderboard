@@ -8,3 +8,8 @@ html {
   font-family: monospace, sans-serif;
   font-size: 10px;
 }
+
+.title {
+  font-size: 3.6rem;
+  margin: 30px 9%;
+}
