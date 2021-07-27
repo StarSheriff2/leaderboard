@@ -34,7 +34,7 @@ $ npm start # This will run webpack dev server
 
 - Or build
 ```bash
-npm run build # And open dist/index.html
+$ npm run build # And open dist/index.html
 ```
 
 ## My process
