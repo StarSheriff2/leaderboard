@@ -4,6 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
+    "dev": "webpack --mode development",
     "build": "webpack",
     "start": "webpack serve --open",
     "watch": "webpack --watch"
