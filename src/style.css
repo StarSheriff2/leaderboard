@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: monospace, sans-serif;
+  font-size: 10px;
+}
+
+header {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.title {
+  font-size: 3.6rem;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 720px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 36%;
+  transform: translate(-50%, -36%);
+}
+
+.section-title {
+  font-size: 2.4rem;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.refresh-btn {
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 2px 2px #333;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+  padding: 3px 6px;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  transition: all 100ms ease;
+}
+
+.refresh-btn:hover,
+.refresh-btn:focus {
+  background: #333;
+  color: #fff;
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
+
+.scores-list {
+  list-style: none;
+  border: 2px solid #333;
+  margin-top: 15px;
+}
+
+.list-item {
+  font-size: 1.5rem;
+  padding: 3px 9px;
+}
+
+.list-item:nth-child(even) {
+  background: #ddd;
+}
+
+.form-section {
+  width: 50%;
+  margin-left: 36px;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 63%;
+}
+
+.form input[type="text"] {
+  border: 3px solid #333;
+  padding: 6px;
+  margin-bottom: 18px;
+}
+
+.form input[type="submit"] {
+  align-self: flex-end;
+  background: #fff;
+  border: 1px solid #333;
+  box-shadow: 2px 2px #333;
+  cursor: pointer;
+  font-family: monospace, sans-serif;
+  font-weight: 700;
+  padding: 3px 6px;
+  margin-right: 2px;
+  transition: all 100ms ease;
+}
+
+.form input[type="submit"]:hover {
+  background: #333;
+  color: #fff;
+  box-shadow: none;
+  transform: translate(1px, 1px);
+}
