@@ -100,13 +100,33 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
 
 /***/ }),
 
+/***/ "./src/home.js":
+/*!*********************!*\
+  !*** ./src/home.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst root = document.getElementById('root');\n\nconst header = `\n<header>\n<h1 class=\"title\">Leaderboard</h1>\n</header>\n`;\n\nconst main = `\n<main>\n<section id=\"scores-section\">\n  <h2 class=\"section-title\">Recent scores</h2>\n  <button type=\"button\" class=\"refresh-btn\">Refresh</button>\n</section>\n<section id=\"form-section\" class=\"form-section\">\n  <form id=\"form\" class=\"form\">\n    <h2 class=\"section-title\">Add your score</h2>\n    <input type=\"text\" id=\"name\" name=\"name\" placeholder=\"Name\" required>\n    <input type=\"text\" id=\"score\" name=\"score\" placeholder=\"Score\" required>\n    <input type=\"submit\" value=\"Submit\">\n  </form>\n</section>\n</main>\n`;\n\nconst renderHome = () => {\n  root.insertAdjacentHTML('beforeend', header);\n  root.insertAdjacentHTML('beforeend', main);\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderHome);\n\n//# sourceURL=webpack://leaderboard/./src/home.js?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\nlet scores = [\n  {\n    name: 'Name 1',\n    score: 300,\n  },\n  {\n    name: 'Name 2',\n    score: 600,\n  },\n  {\n    name: 'Name 3',\n    score: 900,\n  },\n  {\n    name: 'Name 4',\n    score: 1200,\n  },\n  {\n    name: 'Name 5',\n    score: 1500,\n  },\n  {\n    name: 'Name 6',\n    score: 1800,\n  },\n];\n\nconst scoresSection = document.getElementById('scores-section');\n\nif (scores.length > 1) {\n  const list = document.createElement('ul');\n  list.className = 'scores-list'\n  scoresSection.appendChild(list);\n\n  for (let i = 0; i < scores.length; i += 1) {\n    const listItem = document.createElement('li');\n    listItem.className = 'list-item';\n    listItem.textContent = `${scores[i].name}: ${scores[i].score}`;\n    list.appendChild(listItem);\n  }\n}\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _home_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./home.js */ \"./src/home.js\");\n/* harmony import */ var _scores_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./scores.js */ \"./src/scores.js\");\n\n\n\n\n(0,_home_js__WEBPACK_IMPORTED_MODULE_1__.default)();\n(0,_scores_js__WEBPACK_IMPORTED_MODULE_2__.default)();\n\n\n//# sourceURL=webpack://leaderboard/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/scores.js":
+/*!***********************!*\
+  !*** ./src/scores.js ***!
+  \***********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst scores = [\n  {\n    name: 'Name 1',\n    score: 300,\n  },\n  {\n    name: 'Name 2',\n    score: 600,\n  },\n  {\n    name: 'Name 3',\n    score: 900,\n  },\n  {\n    name: 'Name 4',\n    score: 1200,\n  },\n  {\n    name: 'Name 5',\n    score: 1500,\n  },\n  {\n    name: 'Name 6',\n    score: 1800,\n  },\n];\n\nconst renderScores = () => {\n  const scoresSection = document.getElementById('scores-section');\n  const list = document.createElement('ul');\n  list.className = 'scores-list';\n  scoresSection.appendChild(list);\n\n  for (let i = 0; i < scores.length; i += 1) {\n    const listItem = document.createElement('li');\n    listItem.className = 'list-item';\n    listItem.textContent = `${scores[i].name}: ${scores[i].score}`;\n    list.appendChild(listItem);\n  }\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (renderScores);\n\n\n//# sourceURL=webpack://leaderboard/./src/scores.js?");
 
 /***/ })
 
