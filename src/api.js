@@ -14,7 +14,7 @@ const getGameID = () => {
     .then((result) => result);
 };
 
-const gameID = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/Do8OmAvk0TAhJqGmCC22/scores/';
+const gameID = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/caXNXmFoFPQU79jDKop8/scores/';
 
 async function getScores() {
   const gameScores = await (await fetch(gameID)).json();
