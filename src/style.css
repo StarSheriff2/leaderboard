@@ -24,11 +24,7 @@ main {
   justify-content: space-between;
   width: 90%;
   max-width: 720px;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  top: 36%;
-  transform: translate(-50%, -36%);
+  margin: 45px auto 0 auto;
 }
 
 .section-title {
@@ -50,8 +46,7 @@ main {
   transition: all 100ms ease;
 }
 
-.refresh-btn:hover,
-.refresh-btn:focus {
+.refresh-btn:hover {
   background: #333;
   color: #fff;
   box-shadow: none;
