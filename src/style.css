@@ -23,8 +23,12 @@ main {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 90%;
-  max-width: 720px;
+  max-width: 810px;
   margin: 45px auto 0 auto;
+}
+
+.scores-section {
+  width: 360px;
 }
 
 .section-title {

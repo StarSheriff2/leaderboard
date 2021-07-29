@@ -10,7 +10,7 @@ const header = `
 
 const main = `
 <main>
-<section id="scores-section">
+<section id="scores-section" class="scores-section">
   <h2 class="section-title">Recent scores</h2>
   <button type="button" id="refresh-btn" class="refresh-btn">Refresh</button>
 </section>
