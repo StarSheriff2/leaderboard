@@ -17,8 +17,8 @@ const main = `
 <section id="form-section" class="form-section">
   <form id="form" class="form">
     <h2 class="section-title">Add your score</h2>
-    <input type="text" id="name" name="name" placeholder="Name" required>
-    <input type="text" id="score" name="score" placeholder="Score" required>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+    <input type="text" id="score" name="score" placeholder="Your score" required>
     <input type="submit" value="Submit">
   </form>
 </section>
