@@ -1,6 +1,6 @@
 import './style.css';
 import renderHome from './home.js';
-import renderScores from './scores.js';
+import { getScores } from './api';
 
 renderHome();
-renderScores();
+getScores();

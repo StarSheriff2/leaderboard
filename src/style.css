@@ -50,8 +50,7 @@ main {
   transition: all 100ms ease;
 }
 
-.refresh-btn:hover,
-.refresh-btn:focus {
+.refresh-btn:hover {
   background: #333;
   color: #fff;
   box-shadow: none;
