@@ -16,17 +16,17 @@ const getGameID = () => {
 
 const gameID = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/caXNXmFoFPQU79jDKop8/scores/';
 
-async function getScores() {
+const getScores = async () => {
   const gameScores = await (await fetch(gameID)).json();
   const scores = gameScores.result;
   renderScores(scores);
-}
+};
 
 const refresh = () => {
   window.location.reload();
 };
 
-async function saveScore(scoreName, scoreValue) {
+const saveScore = async (scoreName, scoreValue) => {
   const newScore = await fetch(gameID, {
     method: 'POST',
     body: JSON.stringify({
@@ -40,7 +40,7 @@ async function saveScore(scoreName, scoreValue) {
   if (newScore.ok) {
     refresh();
   }
-}
+};
 
 export {
   getGameID,
